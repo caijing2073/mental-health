@@ -1,0 +1,51 @@
+/* pages/edit-tree-hole/edit-tree-hole.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+}
+
+.edit-wrap {
+  position: relative;
+}
+
+.edit-area {
+  background-color: #F2F2F2;
+  border-radius: 10rpx;
+  width: 700rpx;
+  height: 562rpx;
+  overflow: scroll;
+  box-sizing: border-box;
+  padding: 38rpx 30rpx;
+}
+
+.desc {
+  position: absolute;
+  right: 30rpx;
+  bottom: 14rpx;
+  color: #8A88A8;
+  font-size: 20rpx;
+}
+
+.add-pic {
+  height: 200rpx;
+  width: 200rpx;
+  position: absolute;
+}
+
+.put-btn {
+  width: 560rpx;
+  height: 90rpx;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+  bottom: 56rpx;
+  line-height: 90rpx;
+  text-align: center;
+  font-size: 30rpx;
+  font-weight: 100;
+  background-color: #594BC8;
+  color: #FFFFFF;
+}

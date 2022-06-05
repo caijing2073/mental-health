@@ -1,0 +1,8 @@
+<!--components/topNav.wxml-->
+<view class="top-nav">
+  <view class="top-nav_item" wx:for="{{navItems}}" wx:key="desc" bindtap="selectItem" data-index="{{index}}">
+    <image class="item-img" wx:if="{{index !== selectedIndex}}" src="{{item.image}}"></image>
+    <image class="item-img" wx:else src="{{item.selectedImage}}"></image>
+    <view class="item-desc">{{item.desc}}</view>
+  </view>
+</view>

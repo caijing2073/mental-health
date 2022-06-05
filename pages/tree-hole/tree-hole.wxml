@@ -1,0 +1,5 @@
+<!--pages/tree-hole/tree-hole.wxml-->
+<view class="tree-hole">
+  <t-icon bindtap="editTreeHole" name="add-circle" class="add-icon"></t-icon>
+  <card wx:for="{{treeHoleItems}}" wx:key="index" content="{{item.content}}" id="{{item._id}}" cardIndex="{{index}}"></card>
+</view>

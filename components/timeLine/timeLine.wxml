@@ -1,0 +1,14 @@
+<!--components/timeLine/timeLine.wxml-->
+<view class="time-line">
+  <view class="time-title">2022年5月</view>
+  <view class="time-wrap">
+    <view class="side-time_warp">
+      <view class="day">
+        31
+      </view>
+    </view>
+    <view class="card">
+      <slot></slot>
+    </view>
+  </view>
+</view>

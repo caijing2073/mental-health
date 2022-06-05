@@ -1,0 +1,28 @@
+<!--pages/music/music.wxml-->
+<view class="music">
+  <!-- <button bindtap="setAudio">click me</button> -->
+  <image class="cover-bg" src="{{coverImg}}"></image>
+  <view class="player-wrap">
+    <view class="music-name">
+      {{'排骨教主 - 清明上河图'}}
+    </view>
+    <view class="music-icon_wrap">
+      <image bindtap="prevMusic" class="prev-icon" src="{{prevIcon}}"></image>
+      <image bindtap="pauseMusic" class="pause-icon" src="{{pauseIcon}}"></image>
+      <image bindtap="nextMusic" class="next-icon" src="{{nextIcon}}"></image>
+    </view>
+  </view>
+  <view class="emotion-wrap">
+    <view class="emotion-head">
+      <text class="emotion-title">选择心情</text>
+      <t-icon wx:if="{{isShowEmotion}}" class="eomotion-icon" name="chevron-down" bindtap="hideEmotion"></t-icon>
+      <t-icon wx:else class="eomotion-icon" name="chevron-up" bindtap="showEmotion"></t-icon>
+    </view>
+    <view class="emotion-content" wx:if="{{isShowEmotion}}">
+      <view class="emotion-item" bindtap="selectIcon" data-index="{{index}}" wx:for="{{emotionItems}}" wx:key="index">
+        <image class="emotion {{index === selectedIcon?'selected-emotion':''}}" src="{{item.icon}}"></image>
+        <text class="emotion-desc">{{item.desc}}</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,38 @@
+/* components/timeLine/timeLine.wxss */
+.time-line {
+  padding-left: 52rpx;
+  padding-right: 40rpx;
+  width: calc(100% - 92rpx);
+}
+
+.time-title {
+  font-size: 40rpx;
+  font-weight: 340;
+  margin-bottom: 40rpx;
+}
+
+.time-wrap {
+  width: 100%;
+  display: flex;
+}
+
+.side-time_warp {
+  margin-right: 40rpx;
+}
+
+.day {
+  font-size: 40rpx;
+  font-weight: 300;
+}
+
+.card {
+  flex: 1;
+}
+
+/* .line {
+  margin-top: 44rpx;
+}
+
+.line::before {
+  
+} */

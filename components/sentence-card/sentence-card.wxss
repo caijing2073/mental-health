@@ -1,0 +1,21 @@
+/* components/sentence-card/sentence-card.wxss */
+.sentence-card {
+  background-color: #b7accc;
+  padding: 0 26rpx;
+  width: 538rpx;
+  border-radius: 20rpx;
+}
+
+.sentence-card .title {
+  font-size: 36rpx;
+  color: #f1f1f1;
+  font-weight: 500;
+  margin-bottom: 20rpx;
+}
+
+.sentence-card .content {
+  font-size: 32rpx;
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: 20rpx;
+}

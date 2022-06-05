@@ -1,0 +1,51 @@
+/* pages/test/test.wxss */
+.test {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 0 40rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: 24rpx 0;
+  flex: 1;
+  overflow: scroll;
+}
+
+.test-item {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 28rpx 6rpx;
+  border-bottom: 1rpx solid #eeeeee;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.test-img {
+  height: 82rpx;
+  width: 162rpx;
+  margin-right: 20rpx;
+}
+
+.test-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.test-title {
+  font-size: 30rpx;
+  color: #3671f5;
+  font-weight: 200;
+}
+
+.test-desc {
+  font-size: 24rpx;
+  color: #A7A7A7;
+  font-weight: 200;
+}

@@ -1,0 +1,68 @@
+/* pages/tips/tips.wxss */
+.tip-card {
+  width: calc(100% - 48rpx);
+  background-color: #F8F8F8;
+  border-radius: 40rpx;
+  display: flex;
+  align-items: center;
+  margin-left: 20rpx;
+}
+
+.tip-img {
+  width: 196rpx;
+  height: 108rpx;
+  margin-left: 20rpx;
+}
+
+.tip-main {
+  width: 300rpx;
+}
+
+.tip-title {
+  font-size: 30rpx;
+  font-weight: 200;
+  color: #3478f5;
+}
+
+.tip-content {
+  color: #A7A7A7;
+  font-size: 24rpx;
+  font-weight: 300;
+}
+
+time-line {
+  padding-left: 52rpx;
+  padding-right: 40rpx;
+  width: calc(100% - 92rpx);
+}
+
+.time-title {
+  font-size: 40rpx;
+  font-weight: 340;
+  margin-bottom: 40rpx;
+}
+
+.time-wrap {
+  width: 100%;
+  display: flex;
+  margin-bottom: 40rpx;
+}
+
+.side-time_warp {
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 20rpx;
+}
+
+.day {
+  font-size: 40rpx;
+  font-weight: 300;
+}
+
+.card {
+  flex: 1;
+}

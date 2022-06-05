@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "sentence-card": "/components/sentence-card/sentence-card"
+  }
+}

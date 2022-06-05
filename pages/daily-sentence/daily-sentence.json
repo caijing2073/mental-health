@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "time-line": "/components/timeLine/timeLine"
+  },
+  "navigationBarTitleText": "每日一句"
+}

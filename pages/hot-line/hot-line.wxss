@@ -1,0 +1,58 @@
+/* pages/hot-line/hot-line.wxss */
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #F8F8F8;
+  overflow: scroll;
+}
+
+.hot-line_card {
+  width: calc(100% - 48rpx);
+  box-sizing: border-box;
+  padding-top: 18rpx;
+  margin: 0 24rpx;
+}
+
+.hot-line_card .title {
+  line-height: 42rpx;
+  margin-bottom: 4rpx;
+  text-indent: 20rpx;
+}
+
+.card-content {
+  background-color: #fff;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+  padding: 26rpx 44rpx 0 44rpx;
+}
+
+.card-content_item {
+  padding-bottom: 26rpx;
+  position: relative;
+}
+
+.have-other_item::after {
+  position: absolute;
+  bottom: 12rpx;
+  content: '';
+  width: 100%;
+  border: 0.5rpx solid #EEEEEE;
+}
+
+.card-contact {
+  margin-right: 30rpx;
+}
+
+.card-title {
+  font-size: 30rpx;
+  line-height: 42rpx;
+  font-weight: 300;
+  margin-bottom: 8rpx;
+}
+
+.card-desc {
+  font-size: 24rpx;
+  line-height: 34rpx;
+  color: #7F7F7F;
+  word-break: break-all;
+}

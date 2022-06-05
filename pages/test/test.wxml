@@ -1,0 +1,14 @@
+<!--pages/test/test.wxml-->
+<view class="test">
+  <top-nav bindlisten="navChange" navItems="{{navItems}}"></top-nav>
+  <switch-tab bindlisten="switchChanged" switchItems="{{switchItems}}"></switch-tab>
+  <view class="content">
+    <view class="test-item" bindtap="toTest">
+      <image class="test-img" src="../../images/test/example@2x.png"></image>
+      <view class="test-content">
+        <view class="test-title">测测你的依恋类型</view>
+        <view class="test-desc">安全型、焦虑型、回避型、混合型...</view>
+      </view>
+    </view>
+  </view>
+</view>

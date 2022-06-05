@@ -1,0 +1,11 @@
+.top-tag {
+  background-color: #FA8D14;
+  font-size: 16rpx;
+  color: #f1f0f0;
+  transform: rotate(313deg);
+  position: absolute;
+  text-align: center;
+  width: 77rpx;
+  top: 10rpx;
+  left: -19rpx;
+}

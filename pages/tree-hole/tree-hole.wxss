@@ -1,0 +1,17 @@
+/* pages/tree-hole/tree-hole.wxss */
+@import '../../css/iconfont.wxss';
+.tree-hole {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.add-icon {
+  position: absolute;
+  font-size: 100rpx;
+  bottom: 45rpx;
+  right: 21rpx;
+}

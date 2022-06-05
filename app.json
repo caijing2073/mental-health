@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/tips/tips",
+    "pages/daily-sentence/daily-sentence",
+    "pages/active/active",
+    "pages/test/test",
+    "pages/questionnaire/questionnaire",
+    "pages/my/my",
+    "pages/login/login",
+    "pages/music/music",
+    "pages/hot-line/hot-line",
+    "pages/edit-tree-hole/edit-tree-hole",
+    "pages/tree-hole/tree-hole",
+    "pages/articel/articel",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#9B9FB0",
+    "selectedColor": "#2EA2FF",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/test/test",
+        "iconPath": "images/tabbar/icon-test@2x.png",
+        "selectedIconPath": "images/tabbar/icon-test-selected@2x.png",
+        "text": "测评"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "images/tabbar/icon-mental@2x.png",
+        "selectedIconPath": "images/tabbar/icon-mental-selected@2x.png",
+        "text": "心理健康"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "images/tabbar/icon-my@2x.png",
+        "selectedIconPath": "images/tabbar/icon-my-selected@2x.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {
+    "t-button": "tdesign-miniprogram/button/button",
+    "t-swiper": "tdesign-miniprogram/swiper/swiper",
+    "t-swiper-item": "tdesign-miniprogram/swiper/swiper-item",
+    "t-swiper-nav": "tdesign-miniprogram/swiper/swiper-nav",
+    "t-icon": "tdesign-miniprogram/icon/icon",
+    "t-input": "tdesign-miniprogram/input/input"
+  },
+  "sitemapLocation": "sitemap.json"
+}

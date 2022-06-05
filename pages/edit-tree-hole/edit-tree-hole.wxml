@@ -1,0 +1,12 @@
+<!--pages/edit-tree-hole/edit-tree-hole.wxml-->
+<view class="container">
+  <view class="main">
+    <view class="edit-wrap">
+      <textarea value="{{submitText}}" bindinput="changeText" class="edit-area" maxlength="200" placeholder="请输入内容..." />
+      <text class="desc">{{submitText.length}}/200</text>
+    </view>
+    <!-- <text>添加树洞背景图片</text> -->
+    <image src="../../images/tree-hole/addPic.png" class="add-pic" bindtap="uploadImage"></image>
+    <button bindtap="submitContent" class="put-btn">发表</button>
+  </view>
+</view>

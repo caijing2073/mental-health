@@ -1,0 +1,118 @@
+/* pages/music/music.wxss */
+.music {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.cover-bg {
+  height: 466rpx;
+  width: 466rpx;
+  margin-top: 56rpx;
+  margin-bottom: 114rpx;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.player-wrap {
+  padding: 0 58rpx;
+}
+
+.player-wrap .music-name {
+  font-size: 32rpx;
+  height: 48rpx;
+  font-weight: 200;
+  margin-bottom: 108rpx;
+}
+
+.music-icon_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute; */
+  width: 100%;
+  /* left: 0;
+  bottom: 154rpx; */
+}
+
+.prev-icon,
+.next-icon {
+  width: 64.3rpx;
+  height: 64rpx;
+}
+
+.pause-icon {
+  width: 104.5rpx;
+  height: 104rpx;
+  margin: 0 96.46rpx;
+}
+
+.emotion-wrap {
+  width: 100%;
+  position: absolute;
+  bottom: 60rpx;
+  background-color: #F8F8F8;
+  border-radius: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emotion-wrap .emotion-head {
+  width: calc(100% - 72rpx);
+  height: 68rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-bottom: 1rpx solid #D8D8D8;
+}
+
+.emotion-wrap .emotion-head .eomotion-icon {
+  font-size: 50rpx;
+  font-weight: 300;
+  position: absolute;
+  right: 0;
+}
+
+.emotion-wrap .emotion-head .emotion-title {
+  font-size: 26rpx;
+  font-weight: 200;
+}
+
+.emotion-wrap .emotion-content {
+  height: 288rpx;
+  width: calc(100% - 100rpx);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20rpx;
+}
+
+.emotion-wrap .emotion-content .emotion-item {
+  width: calc(100% / 3);
+  height: 108rpx;
+  font-size: 24rpx;
+  font-weight: 200;
+  color: #7F7F7F;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.emotion-wrap .emotion-content .emotion-item .emotion {
+  height: 50rpx;
+  width: 50rpx;
+  transition: all .1s;
+}
+
+.emotion-wrap .emotion-content .emotion-item .selected-emotion {
+  height: 70rpx;
+  width: 70rpx;
+  transition: all .1s;
+}

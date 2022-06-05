@@ -1,0 +1,9 @@
+<!--components/sentence-card/sentence-card.wxml-->
+<view class="sentence-card">
+  <view class="title">
+    2022.03.28
+  </view>
+  <view class="content">
+    我确实只是一条测试信息
+  </view>
+</view>

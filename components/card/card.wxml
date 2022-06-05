@@ -1,0 +1,13 @@
+<view class="container" catchtap="hidePop">
+  <image wx:if="{{bgImg}}" class="bg-img" src="{{bgImg}}"></image>
+  <view class="dot-wrap" catchtap="showPop">
+    <view class="dot"></view>
+    <view class="dot"></view>
+    <view class="dot"></view>
+  </view>
+  <view class="pop-wrap" wx:if="{{isShowPop}}">
+    <view class="pop-item" bindtap="deleteTreeHole">删除</view>
+    <!-- <view class="pop-item">不喜欢</view> -->
+  </view>
+  <text class="content">{{content || '22222'}}</text>
+</view>

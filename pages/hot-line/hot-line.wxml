@@ -1,0 +1,25 @@
+<!--pages/hot-line/hot-line.wxml-->
+<view class="container">
+  <view class="hot-line_card" wx:for="{{cardItems}}" wx:key="index">
+    <view class="title">
+      {{item.title}}
+    </view>
+    <view class="card-content">
+      <view wx:for="{{item.cardContent}}" wx:key="index" class="card-content_item">
+        <view class="card-item_wrap">
+          <view class="card-title">
+            <text>{{item.title}}</text>
+          </view>
+          <view class="card-desc">
+            <view>
+              <text wx:for="{{item.tag}}" wx:key="index" class="card-tag">{{item}}</text>
+            </view>
+            <view>
+              <text wx:for="{{item.contact}}" wx:key="index" class="card-contact" data-phone="{{item}}" bindtap="makeACall">{{item}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

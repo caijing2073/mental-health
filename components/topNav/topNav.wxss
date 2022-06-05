@@ -1,0 +1,27 @@
+/* components/topNav.wxss */
+.top-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40rpx;
+}
+
+.top-nav_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 78rpx;
+}
+
+.item-img {
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.item-desc {
+  font-size: 20rpx;
+  color: #3d3d3d;
+  font-weight: 200;
+}

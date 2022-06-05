@@ -1,0 +1,19 @@
+<!--pages/active/active.wxml-->
+<view class="active">
+  <view class="active-card" bindtap="meditationMoment">
+    <view class="top-tag">置顶</view>
+    <image class="icon" src="{{defaultIcon}}"></image>
+    <view class="content">
+      <view class="title">每日一句</view>
+      <view class="desc">静心时刻</view>
+    </view>
+  </view>
+  <view class="active-card" bindtap="meditationMoment">
+    <view class="top-tag">置顶</view>
+    <image class="icon" src="{{defaultIcon}}"></image>
+    <view class="content">
+      <view class="title">校园心理健康活动</view>
+      <view class="desc">活动时间：2022.2.11 - 2.15</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,5 @@
+<!--pages/daily-sentence/daily-sentence.wxml-->
+<view class="daily-sentence">
+  <time-line>
+  </time-line>
+</view>

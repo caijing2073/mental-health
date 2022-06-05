@@ -1,0 +1,24 @@
+<view class="home swiper-home">
+  <view class="home-section">
+    <view class="swiper-box">
+      <!-- 受控属性示例 -->
+      <t-swiper t-class="swiper-wrap" current="{{current}}" autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}" bindchange="onChange" navigation>
+        <t-swiper-item wx:for="{{items}}" wx:key="index">
+          <view class="item">{{index}}
+            <image src="{{item.image}}" class="img" />
+          </view>
+        </t-swiper-item>
+      </t-swiper>
+    </view>
+  </view>
+  <view class="item-display_wrap">
+    <view class="icon-wrap" wx:for="{{homeItems}}" wx:key="index">
+      <view class="icon-container" bindtap="toPage" data-page="{{item.page || '暂时还没有'}}">
+        <image src="{{item.image}}" class="icon" />
+        <view class="desc">
+          {{item.text}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

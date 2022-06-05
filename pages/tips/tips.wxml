@@ -1,0 +1,22 @@
+<!--pages/tips/tips.wxml-->
+<view class="tip">
+  <view class="time-line">
+    <view class="time-title">2022年</view>
+    <view class="time-wrap" wx:for="{{cardItems}}" wx:key="index">
+      <view class="side-time_warp">
+        <view class="day">
+          {{5}}
+        </view>
+      </view>
+      <view class="card">
+        <view class="tip-card">
+          <image class="tip-img" src="../../images/tip/default@2x.png"></image>
+          <view class="tip-main">
+            <view class="tip-title">{{item.title}}</view>
+            <view class="tip-content">{{item.content}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

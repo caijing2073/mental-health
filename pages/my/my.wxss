@@ -1,0 +1,108 @@
+/* pages/my/my.wxss */
+@import '../../css/iconfont.wxss';
+
+.header-bg {
+  position: absolute;
+  top: -10rpx;
+  left: -20rpx;
+  width: calc(100% + 40rpx);
+  padding: 0;
+  margin: 0;
+  height: 378rpx;
+  box-shadow: 0 -1rpx 1rpx rgba(0, 0, 0, .12);
+}
+
+.avatar-wrap {
+  height: 120rpx;
+  display: flex;
+  margin-top: 116rpx;
+  margin-left: 32rpx;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.avatar {
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 120rpx;
+  overflow: hidden;
+  margin-right: 30rpx;
+}
+
+.username {
+  font-size: 32rpx;
+  color: #ffffff;
+  font-weight: 100;
+}
+
+.userinfo-wrap {
+  width: 710rpx;
+  height: 152rpx;
+  margin-top: 40rpx;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  box-shadow: 0 2rpx 12rpx 0 rgba(0, 0, 0, 0.1);
+  border-radius: 20rpx 20rpx 0 0;
+}
+
+.info-item {
+  width: 96rpx;
+  height: 82rpx;
+}
+
+.info-count {
+  font-size: 36rpx;
+  text-align: center;
+}
+
+.info-desc {
+  font-size: 24rpx;
+  font-weight: 200;
+}
+
+.splitBar {
+  width: 100vw;
+  height: 16rpx;
+  background-color: #F7F7F7;
+}
+
+.userinfo {
+  position: relative;
+  z-index: 100;
+  margin-top: 116rpx;
+  margin-left: 32rpx;
+}
+
+.content {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.other-item {
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 0 32rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.other-item .icon {
+  color: #ACB2BF;
+}
+
+.other-item text {
+  font-size: 30rpx;
+  font-weight: 200;
+  line-height: 110rpx;
+}

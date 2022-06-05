@@ -1,0 +1,31 @@
+/* pages/questionnaire/questionnaire.wxss */
+.questionnaire {
+  width: cala(100% - 60rpx);
+  padding: 0 30rpx;
+  position: relative;
+}
+.topic {
+  height: 120rpx;
+  font-size: 38rpx;
+  font-weight: 300;
+}
+
+.title {
+  font-size: 34rpx;
+  font-weight: 200;
+}
+
+.result-title {
+  font-size: 38rpx;
+  margin-bottom: 40rpx;
+  font-weight: 700;
+}
+
+button {
+  position: relative;
+  top: 20rpx;
+}
+
+.submit-btn {
+float: right;
+}

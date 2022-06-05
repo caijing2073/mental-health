@@ -1,0 +1,52 @@
+/* pages/active/active.wxss */
+@import '/css/common.wxss';
+
+.active {
+  height: calc(100vh - 12rpx);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EFEFEF;
+  overflow: scroll;
+  padding-top: 12rpx;
+}
+
+.active-card {
+  width: 702rpx;
+  height: 140rpx;
+  margin-bottom: 18rpx;
+  border-radius: 20rpx;
+  background-color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.active-card .icon {
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 80rpx;
+  margin-left: 32rpx;
+}
+
+.active-card .content {
+  height: 80rpx;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.active-card .content .title {
+  font-size: 30rpx;
+  font-weight: 300;
+}
+.active-card .content .desc {
+  font-size: 24rpx;
+  color: rgb(34, 34, 252);
+  font-weight: 300;
+}

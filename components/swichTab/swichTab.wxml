@@ -1,0 +1,6 @@
+<!--components/swichTab/swichTab.wxml-->
+<view class="switch-tab" bindtap="changeTab">
+  <view class="switch-tab_item {{selectedIndex === index?'selected-tab':''}}" wx:for="{{switchItems}}" wx:key="desc">
+    {{item.desc}}
+  </view>
+</view>

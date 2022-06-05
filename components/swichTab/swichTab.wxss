@@ -1,0 +1,29 @@
+/* components/swichTab/swichTab.wxss */
+.switch-tab {
+  background-color: #EEEEEE;
+  border-radius: 20rpx;
+  box-sizing: content-box;
+  height: 50rpx;
+  width: 130rpx;
+  padding: 6rpx 4rpx;
+  margin-top: 18rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.selected-tab {
+  background-color: #fff;
+  box-shadow: 0 -1rpx 1rpx rgba(0, 0, 0, .12);
+}
+
+.switch-tab_item {
+  border-radius: 20rpx;
+  color: #000000;
+  font-size: 20rpx;
+  font-weight: 300;
+  height: 40rpx;
+  line-height: 40rpx;
+  padding: 8rpx 11rpx;
+  text-align: center;
+}

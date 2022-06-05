@@ -1,0 +1,30 @@
+<!--pages/questionnaire/questionnaire.wxml-->
+<view class="questionnaire">
+  <view class="question-wrap" wx:for="{{questions}}" wx:for-index="questionIndex" wx:for-item="quetionItem" wx:if="{{!(currentQuestionIndex>=questions.length)&&!isSubmit}}" wx:key="index">
+    <view wx:if="{{questionIndex === currentQuestionIndex}}">
+      <view class="topic">
+        {{topic}}
+      </view>
+      <view class="title">{{questionIndex+1}}.{{quetionItem.title}}</view>
+      <t-radio-group wx:for="{{quetionItem.options}}" wx:key="index" bind:change="onChange" data-index="{{questionIndex}}" defaultValue="{{quetionItem.seletedOption}}">
+        <text>{{item.seletedOption}}</text>
+        <t-radio value="{{index}}" label="{{item}}" align="right" />
+      </t-radio-group>
+    </view>
+  </view>
+  <t-button bindtap="prevQuestion" class="prev-btn" theme="primary" size="middle" variant="plain" wx:if="{{(currentQuestionIndex>0&&!isSubmit)}}">上一题</t-button>
+  <t-button bindtap="submitQuestion" class="submit-btn" theme="primary" size="middle" wx:if="{{(currentQuestionIndex===questions.length-1&&!isSubmit)}}">提交结果</t-button>
+  <view class="result" wx:if="{{(currentQuestionIndex===questions.length-1&&isSubmit)}}">
+    <view class="result-title">
+      测试结果：轻度焦虑
+    </view>
+    <view class="result-advice">
+      建议：
+      （1）营养充足、积极参加体育运动。充足的营养和一张一弛的生活节奏可以有效的降低焦虑程度，缓解精神紧张。因此被测者应调节饮食，养成运动的习惯。这样即使在外界压力较大的情况下也可以防止焦虑情绪的积累。
+
+      （2）睡眠充足，劳逸结合。即使有很重的学习或工作压力，也要尽量保证充足的睡眠。睡眠质量不好，也不好太过担心。而要以平常心对待，顺其自然。另外，在学习或工作之余，可以进行其它活动加以调节，如听轻音乐等有助于缓解紧张情绪。
+
+      （3）培养良好的学习和工作习惯。现在社会，节奏紧张，外界压力增加是每个人不可回避的问题。如果个人注意养成高效的工作和学习习惯，就可以有效减少工作、学习带来的压力感，提高应对压力的信心。
+    </view>
+  </view>
+</view>

@@ -1,0 +1,59 @@
+.container {
+  background-color: #F2F2F2;
+  position: relative;
+  width: 700rpx;
+  height: 334rpx;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22rpx;
+}
+
+.content {
+  text-align: center;
+  color: #7F7F7F;
+  font-weight: 300;
+  font-size: 24rpx;
+}
+
+.dot-wrap {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 10rpx;
+  right: 10rpx;
+  width: 40rpx;
+  height: 30rpx;
+}
+
+.dot {
+  height: 8rpx;
+  width: 8rpx;
+  background-color: #121212;
+  border-radius: 8rpx;
+}
+
+.pop-wrap {
+  position: absolute;
+  top: 20rpx;
+  right: 10rpx;
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: 100rpx; */
+  transform: all .5s;
+}
+
+.pop-item {
+  width: 100rpx;
+  height: 100%;
+  text-align: center;
+  font-size: 20rpx;
+  margin: 10rpx 0;
+  background-color: #fff;
+}
