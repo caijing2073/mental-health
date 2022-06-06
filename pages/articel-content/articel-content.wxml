@@ -1,0 +1,5 @@
+<!--pages/articel-content/articel-content.wxml-->
+<view class="article-content">
+  <view class="title">{{title}}</view>
+  <view class="content">{{content}}</view>
+</view>

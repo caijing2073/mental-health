@@ -21,6 +21,13 @@ Page({
       title: '树洞发表成功～',
       icon: 'success',
     })
+    wx.request({
+      url: 'http://127.0.0.1:4000/treeHole/setTreeHole',
+      method:'post',
+      data: {
+        submitText:this.data.submitText,
+      }
+    })
   },
 
   uploadImage() {
@@ -50,10 +57,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    wx.showToast({
-      title: '图片上传成功',
-      icon:'success'
-    })
+    // wx.showToast({
+    //   title: '图片上传成功',
+    //   icon:'success'
+    // })
   },
 
   /**

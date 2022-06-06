@@ -6,7 +6,9 @@ Page({
    */
   data: {
     musicList: [],
+    musicName: '暂无乐曲',
     currentRadio: '',
+    isParse: true,
     coverImg: '/images/music/cover-bg@2x.png',
     prevIcon: '/images/music/prev@2x.png',
     pauseIcon: '/images/music/pause@2x.png',
@@ -61,9 +63,11 @@ Page({
     this.distroyCurrentMusic().then(() => {
       this.setData({
         currentRadio: wx.createInnerAudioContext(),
+        musicName: this.data.currentMusicList[0].split('.')[0],
+        isParse: false,
       })
       console.log('this.data.currentMusicList[0]:', this.data.currentMusicList[0]);
-      this.data.currentRadio.src = `http://localhost:4000/file/getMusic?music=${this.data.currentMusicList[0]}`;
+      this.data.currentRadio.src = `http://localhost:4000/music/getMusic?music=${this.data.currentMusicList[0]}`;
       this.data.currentRadio.play();
     })
   },
@@ -73,7 +77,17 @@ Page({
   },
 
   pauseMusic() {
-    this.data.currentRadio.pause();
+    if (this.data.isParse) {
+      this.setData({
+        isParse: false
+      })
+      this.data.currentRadio.play()
+    } else {
+      this.setData({
+        isParse: true
+      })
+      this.data.currentRadio.pause();
+    }
   },
 
   nextMusic() {
@@ -82,7 +96,7 @@ Page({
 
   getAudio() {
     wx.request({
-      url: 'http://127.0.0.1:4000/file/getMusic',
+      url: 'http://127.0.0.1:4000/music/getMusic',
       success: (res) => {
         console.log('res:', res);
         this.setData({
@@ -94,7 +108,7 @@ Page({
 
   getMusicList(index) {
     wx.request({
-      url: 'http://127.0.0.1:4000/file/getMusicList',
+      url: 'http://127.0.0.1:4000/music/getMusicList',
       method: 'POST',
       data: {
         emotion: this.data.emotionItems[index].music,

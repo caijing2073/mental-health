@@ -1,2 +1,13 @@
-<!--pages/articel/articel.wxml-->
-<text>pages/articel/articel.wxml</text>
+<view class="article">
+  <top-nav bindlisten="navChange" navItems="{{navItems}}"></top-nav>
+  <switch-tab bindlisten="switchChanged" switchItems="{{switchItems}}"></switch-tab>
+  <view class="content" wx:for="{{article}}" wx:key="index">
+    <view class="article-item" bindtap="toArticle" data-index="{{index}}">
+      <image class="article-img" src="../../images/test/example@2x.png"></image>
+      <view class="article-content">
+        <view class="article-title">{{item.title}}</view>
+        <view class="article-desc">{{item.profiles}}</view>
+      </view>
+    </view>
+  </view>
+</view>

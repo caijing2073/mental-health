@@ -1,0 +1,7 @@
+/* pages/articel-content/articel-content.wxss */
+.title {
+  font-weight: 500;
+  font-size: 40rpx;
+  text-align: center;
+  margin-bottom: 30rpx;
+}

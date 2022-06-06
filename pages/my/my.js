@@ -24,6 +24,14 @@ Page({
       },
     ],
     otherItems: [
+      // {
+      //   desc: '登录',
+      //   method: 'toLogin',
+      // },
+      // {
+      //   desc: '注册',
+      //   method: 'toRegister',
+      // },
       {
         desc: '反馈',
       },
@@ -35,6 +43,11 @@ Page({
   toLogin() {
     wx.navigateTo({
       url: '/pages/login/login',
+    })
+  },
+  toRegister() {
+    wx.navigateTo({
+      url: '/pages/register/register',
     })
   },
   onLoad() {

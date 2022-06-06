@@ -1,10 +1,9 @@
 <!--pages/music/music.wxml-->
 <view class="music">
-  <!-- <button bindtap="setAudio">click me</button> -->
   <image class="cover-bg" src="{{coverImg}}"></image>
   <view class="player-wrap">
     <view class="music-name">
-      {{'排骨教主 - 清明上河图'}}
+      {{musicName}}
     </view>
     <view class="music-icon_wrap">
       <image bindtap="prevMusic" class="prev-icon" src="{{prevIcon}}"></image>

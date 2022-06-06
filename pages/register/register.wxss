@@ -1,0 +1,17 @@
+/* pages/login/login.wxss */
+.login {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ipt {
+  width: 95%;
+}
+
+.btn {
+  width: 95%;
+  margin-top: 30rpx;
+}

@@ -98,7 +98,7 @@ Page({
     this.setData({
       questions: questions,
     })
-    if (this.data.currentQuestionIndex === questions.length - 1) { 
+    if (this.data.currentQuestionIndex === questions.length - 1) {
       this.setData({
         currentQuestionIndex: this.data.currentQuestionIndex + 1,
       }, () => {
@@ -116,6 +116,11 @@ Page({
   },
 
   submitQuestion() {
+    if (this.data.questions[this.data.questions.length - 1].seletedOption === '') return;
+    let finalScore = 0;
+    this.data.questions.forEach(item => {
+      finalScore += item.seletedOption;
+    })
     this.setData({
       isSubmit: true,
     })
@@ -125,7 +130,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    console.log('questions:', questions);
   },
 
   /**

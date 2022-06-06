@@ -1,7 +1,7 @@
 <!--pages/tips/tips.wxml-->
 <view class="tip">
   <view class="time-line">
-    <view class="time-title">2022年</view>
+    <view class="time-title">2022年5月</view>
     <view class="time-wrap" wx:for="{{cardItems}}" wx:key="index">
       <view class="side-time_warp">
         <view class="day">

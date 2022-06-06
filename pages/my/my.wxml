@@ -12,13 +12,13 @@
     </view>
     <view class="userinfo-wrap">
       <view class="info-item" wx:for="{{userinfoItems}}" wx:key="desc">
-        <view class="info-count">{{!hasUserInfo?0:1}}</view>
+        <view class="info-count">{{!hasUserInfo?0:0}}</view>
         <view class="info-desc">{{item.desc}}</view>
       </view>
     </view>
     <view class="splitBar"></view>
     <view class="other">
-      <view class="other-item" wx:for="{{otherItems}}" wx:key="desc" bindtap="toLogin">
+      <view class="other-item" wx:for="{{otherItems}}" wx:key="desc" bindtap="{{item.method}}">
         <text>{{item.desc}}</text>
         <t-icon class="icon" name="chevron-right"></t-icon>
       </view>

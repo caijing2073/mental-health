@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "top-nav": "../../components/topNav/topNav",
+    "switch-tab": "../../components/swichTab/swichTab"
+  },
+  "navigationBarTitleText": "文章"
 }
